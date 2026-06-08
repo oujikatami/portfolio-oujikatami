@@ -15,6 +15,35 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Tambahan style dikit biar icon sosmed di dalem kartu keliatan rapi dan responsif */
+    .project-socials {
+      display: flex;
+      gap: 15px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+    .project-socials .proj-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      background: rgba(66, 136, 152, 0.1);
+      border: 1px solid rgba(66, 136, 152, 0.3);
+      color: #F6F6F6;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-size: 1.1rem;
+    }
+    .project-socials .proj-icon:hover {
+      background: #428898;
+      color: #0C1418;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(66, 136, 152, 0.4);
+    }
+  </style>
 </head>
 <body>
   <!-- NAVBAR -->
@@ -64,7 +93,8 @@
           <p>building the fastest and most secure crypto swap app</p>
         </div>
 
-        <a href="https://AsahiFinance.xyz" target="_blank" rel="noopener noreferrer" class="project-card teal-glow">
+        <!-- Note: Tag pembungkus luar diganti div agar link internal icon sosmed berfungsi normal -->
+        <div class="project-card teal-glow">
           <div class="project-logo">
             <img src="asahi.png" alt="Asahi Finance logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
             <div class="logo-fallback">旭</div>
@@ -76,16 +106,21 @@
             <h3>Asahi Finance</h3>
             <p>Secure your spot, trading, earn points, and climb the leaderboard on Asahi Finance.</p>
 
-            <!-- BERHASIL DIUBAH: Menjadi hanya menu Community dengan icon -->
-            <div class="feature-grid">
-              <div class="feature"><i class="fa-solid fa-users"></i><span>Community</span></div>
+            <!-- BERHASIL DIPERBAIKI: Daftar Icon Sosial Media Asahi Finance yang bisa diklik semua -->
+            <div class="project-socials">
+              <a href="mailto:contact@AsahiFinance.xyz" class="proj-icon" title="Email"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="proj-icon" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="proj-icon" title="Discord"><i class="fa-brands fa-discord"></i></a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="proj-icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="proj-icon" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="https://medium.com" target="_blank" rel="noopener noreferrer" class="proj-icon" title="Medium"><i class="fa-brands fa-medium"></i></a>
             </div>
 
-            <div class="visit-link">
+            <a href="https://AsahiFinance.xyz" target="_blank" rel="noopener noreferrer" class="visit-link">
               Visit asahifinance.xyz <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div>
+            </a>
           </div>
-        </a>
+        </div>
       </div>
     </section>
 
