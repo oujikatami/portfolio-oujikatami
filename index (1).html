@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ouji Katami — AI Content Creator & Web3 Specialist</title>
+  <meta name="description" content="Portfolio of Ouji Katami — cinematic Generative AI videos and Web3 growth, community & marketing strategy." />
+  <meta property="og:title" content="Ouji Katami — AI Content Creator & Web3 Specialist" />
+  <meta property="og:description" content="Cinematic Generative AI videos and Web3 growth, community & marketing strategy." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="glass-nav" id="navbar">
+    <nav class="nav-inner">
+      <a href="#home" class="logo">Ouji <span>Katami</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero grid-bg">
+      <div class="container hero-inner">
+        <span class="pill fade-up">
+          <span class="dot"></span> Available for new collaborations
+        </span>
+        <h1 class="fade-up-2">Hi, I'm <span class="text-gradient">Ouji Katami.</span></h1>
+        <p class="sub fade-up-3">AI Content Creator &amp; Web3 Specialist.</p>
+        <p class="desc fade-up-3">
+          I build episodic cinematic videos using Generative AI and help Web3 projects grow
+          through community management &amp; marketing strategy.
+        </p>
+        <div class="cta-row fade-up-4">
+          <a href="#projects" class="btn btn-outline">
+            View Projects <i class="fa-solid fa-arrow-down"></i>
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            Get in touch <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Featured</div>
+          <h2>Upcoming Project Spotlight</h2>
+          <p>A major Web3 launch — secure your spot early.</p>
+        </div>
+
+        <a href="https://AsahiFinance.xyz" target="_blank" rel="noopener noreferrer" class="project-card teal-glow">
+          <div class="project-logo">
+            <img src="Asahi.png" alt="Asahi Finance logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="logo-fallback">旭</div>
+          </div>
+          <div class="project-body">
+            <div class="status">
+              <span class="pulse-dot"></span> Now Onboarding
+            </div>
+            <h3>AsahiFinance</h3>
+            <p>Secure your spot, trading, earn points, and climb the leaderboard on Asahi Finance.</p>
+
+            <div class="feature-grid">
+              <div class="feature"><i class="fa-solid fa-shield-halved"></i><span>Secure Spot</span></div>
+              <div class="feature"><i class="fa-solid fa-chart-line"></i><span>Trade</span></div>
+              <div class="feature"><i class="fa-solid fa-trophy"></i><span>Leaderboard</span></div>
+            </div>
+
+            <div class="visit-link">
+              Visit AsahiFinance.xyz <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container narrow">
+        <div class="section-header">
+          <div class="eyebrow">Experience</div>
+          <h2>Web3 &amp; Community</h2>
+          <p>Building, growing, and stewarding crypto-native communities.</p>
+        </div>
+
+        <ol class="timeline">
+          <li>
+            <span class="t-icon"><i class="fa-solid fa-bullhorn"></i></span>
+            <h4>Web3 Marketing Strategist</h4>
+            <p>Designed growth strategies, hosted AMA sessions, and executed Twitter/X campaigns to boost engagement for Web3 projects.</p>
+          </li>
+          <li>
+            <span class="t-icon"><i class="fa-solid fa-users"></i></span>
+            <h4>Community Moderator</h4>
+            <p>Managed, engaged, and maintained a healthy, active community environment across Discord/Telegram channels with thousands of members.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER / CONTACT -->
+  <footer id="contact" class="footer">
+    <div class="container narrow">
+      <div class="section-header">
+        <div class="eyebrow">Contact</div>
+        <h2>Let's build something.</h2>
+        <p>Pick your favorite channel — I usually reply within 24 hours.</p>
+      </div>
+
+      <div class="contact-widget">
+        <div class="tab-bar">
+          <button class="tab active" data-tab="email"><i class="fa-solid fa-envelope"></i><span>Email</span></button>
+          <button class="tab" data-tab="whatsapp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></button>
+          <button class="tab" data-tab="quick"><i class="fa-solid fa-feather"></i><span>Quick Note</span></button>
+        </div>
+
+        <div class="tab-body">
+          <div class="status-msg" id="statusMsg" hidden>
+            <i class="fa-solid fa-circle-check"></i> Message sent — thanks for reaching out!
+          </div>
+
+          <form class="tab-panel active" data-panel="email">
+            <input type="email" placeholder="Your email" required />
+            <input type="text" placeholder="Subject" required />
+            <textarea placeholder="Your message..." rows="4" required></textarea>
+            <button type="submit" class="btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Email</button>
+          </form>
+
+          <form class="tab-panel" data-panel="whatsapp">
+            <input type="text" placeholder="Your name" />
+            <textarea id="waMsg" placeholder="Quick message to send on WhatsApp..." rows="4" required></textarea>
+            <button type="submit" class="btn-primary"><i class="fa-brands fa-whatsapp"></i> Open WhatsApp</button>
+          </form>
+
+          <form class="tab-panel" data-panel="quick">
+            <textarea placeholder="Leave a quick or anonymous note..." rows="5" required></textarea>
+            <button type="submit" class="btn-primary"><i class="fa-solid fa-feather"></i> Drop Note</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="socials">
+        <a class="social-icon" href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a class="social-icon" href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a class="social-icon" href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a class="social-icon" href="https://medium.com" target="_blank" rel="noopener noreferrer" aria-label="Medium"><i class="fa-brands fa-medium"></i></a>
+        <a class="social-icon" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a class="social-icon" href="mailto:hello@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a class="social-icon" href="tel:+10000000000" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+      </div>
+
+      <p class="copyright">© 2026 Ouji Katami. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+      const icon = toggle.querySelector('i');
+      icon.className = links.classList.contains('open') ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+    });
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      links.classList.remove('open');
+      toggle.querySelector('i').className = 'fa-solid fa-bars';
+    }));
+
+    // Tabs
+    const tabs = document.querySelectorAll('.tab');
+    const panels = document.querySelectorAll('.tab-panel');
+    const statusMsg = document.getElementById('statusMsg');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        panels.forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        document.querySelector(`.tab-panel[data-panel="${tab.dataset.tab}"]`).classList.add('active');
+        statusMsg.hidden = true;
+      });
+    });
+
+    // Form submissions
+    document.querySelectorAll('.tab-panel').forEach(form => {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (form.dataset.panel === 'whatsapp') {
+          const msg = document.getElementById('waMsg').value || 'Hi Ouji!';
+          window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank');
+        }
+        statusMsg.hidden = false;
+        form.reset();
+        setTimeout(() => { statusMsg.hidden = true; }, 2800);
+      });
+    });
+  </script>
+</body>
+</html>
